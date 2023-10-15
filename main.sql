@@ -6,7 +6,7 @@ SELECT
 	Menus.Category,
 	sum(Orders.quantity) NumberofOrders
 FROM Orders,Menus
-WHERE Orders.MenuID = Menus.MenuID
+WHERE Orders.MenuID = Menus.ID
 GROUP BY 1
 ORDER BY 3 DESC
 LIMIT 5;
